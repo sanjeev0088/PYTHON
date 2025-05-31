@@ -1,0 +1,9 @@
+from datetime import date
+
+start_date = date(2004, 9, 15)
+end_date = date(2025, 5, 31)
+
+difference = end_date - start_date
+number_of_days = difference.days
+
+print(f"The number of days between 15-09-2004 and 31-05-2025 is: {number_of_days}")
