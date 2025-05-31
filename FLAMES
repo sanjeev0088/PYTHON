@@ -1,0 +1,12 @@
+name1=input("Enter the name of boy: ")
+name2=input("Enter the name of girl: ")
+l1=list(name1)
+l2=list(name2)
+for i in range (len(l1)):
+    for j in range(len(l2)):
+        if(l1[i]==l2[j]):
+            l1[i]="*"
+            l2[j]="*"
+            
+print(l1)
+print(l2)
