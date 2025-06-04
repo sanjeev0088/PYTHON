@@ -1,0 +1,62 @@
+class simple():
+    def add(self,a,b):
+        return a+b
+    
+    def y(self):
+        print("RCB won")
+               
+s=simple()
+a=10
+b=20
+print(s.add(a,b))
+print(s.y())
+
+
+
+class Cal:
+    def circle(self,r):
+        return 3.14*self.r*self.r
+        
+    
+    def set_dim(self,r):
+        self.r=r
+    
+c=Cal()
+c.set_dim(5)
+print(c.circle(5))
+
+
+
+
+class Rect:
+    def set_dim(self, a, b):
+        self.w = a
+        self.h = b
+
+    def peri(self):
+        return 2 * (self.w + self.h)
+
+    def area(self):
+        return self.w * self.h
+
+    def __str__(self):
+        return f"Rectangle (Width: {self.w}, Height: {self.h})"
+
+l = []
+d = 10
+
+for i in range(3):
+    d = d + i
+    r = Rect()
+    
+    w = int(input("Enter width: "))
+    h = int(input("Enter height: "))
+    
+    r.set_dim(w, h)
+    l.append(r)  
+
+
+for rect in l:
+    print(rect)
+    print(f"Perimeter: {rect.peri()}, Area: {rect.area()}")
+    print("-" * 30)
